@@ -13,7 +13,7 @@ def make_looper(a: str) -> Any:
     string_list = list(a)
 
     def looper() -> Any:
-        # Берем первый символ из списка и ставим его в конец
+        # Берем первый символ из списка возвращаем его и ставим в конец
         while True:
             letter = string_list[0]
             string_list.append(string_list.pop(0))
